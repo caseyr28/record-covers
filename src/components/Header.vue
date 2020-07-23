@@ -13,7 +13,6 @@ export default {
 
 <style scoped>
     div{
-        background-color: aqua;
         margin: 0 auto;
         padding: 1em;  
     }

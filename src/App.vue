@@ -23,6 +23,8 @@ export default {
 .container{
   margin: 0 auto;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
