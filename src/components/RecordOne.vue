@@ -1,9 +1,9 @@
 <template>
 <div class="main">
-    <h1>
+    <h1 data-aos="fade-up" data-aos-duration="500">
         Little<br>Milton<br>Sings<br>Big Blues
     </h1>
-    <ul class="images">
+    <ul class="images" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
         <li>
             <img class="static" src="../assets/milton-1-static.jpg" alt="an image of Little Milton playiong Guitar">
             <img class="active" src="../assets/milton.gif" alt="an image of Little Milton playiong Guitar">
@@ -40,10 +40,16 @@
     
 </template>
 
+
 <script>
+// import AOS from 'https://unpkg.com/aos@2.3.1/dist/aos.js'
+
 export default {
-    name: 'RecordOne'
+    name: 'RecordOne',
+    // addons: 'AOS'
 }
+
+// AOS.init();
 </script>
 
 <style scoped>
