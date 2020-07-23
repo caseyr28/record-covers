@@ -1,7 +1,7 @@
 <template>
 <div class="main">
     <h1>
-        Little Milton Sings<br> &nbsp; Big  Blues
+        Little<br>Milton<br>Sings<br>Big Blues
     </h1>
     <ul class="images">
         <li>
@@ -53,23 +53,26 @@ export default {
        height: auto;
    }
    h1{
-       font-weight: 700;
-       font-size: 14em;
-       color: #F0ED00;
-       letter-spacing: -10px;
-       line-height: 200px;
-       width: 1200px;
+        font-weight: 700;
+        font-size: calc(14px + (180 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(14px + (140 - 14) * ((100vw - 300px) / (1600 - 300)));
+        color: #F0ED00;
+        position: fixed;
+        z-index: 10;
    }
    .images{
-       display: flex;
-       list-style: none;
-   }
-   li{
-       margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position: relative;
+        top: 0;
+        left: 50vw;
+        width: 20%;
    }
    .images img{
-       height: 350px;
-       margin: 3em 1em 10em 0;
+        margin: 1em 1em 1em 0;
+        width: 100%;
+        height: auto;
 
    }
 
@@ -81,13 +84,16 @@ export default {
    }
 
    .backCover{
-       display: grid;
-       grid-template-columns: 33% 33% 33%;
-       background-color:lightskyblue;
-       margin: 0 14em 14em 0;
-       -webkit-box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
-       -moz-box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
-       box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        background-color: lightskyblue;
+        margin: 0 14em 14em 0;
+        position: relative;
+        top: calc(14px + (180 - 14) * ((100vw - 300px) / (1600 - 300)));
+        z-index: 10;
+        -webkit-box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
+        box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.41);
    }
 
    .backCover-child{
