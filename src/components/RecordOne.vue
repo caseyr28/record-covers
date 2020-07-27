@@ -65,6 +65,8 @@ export default {
 <style scoped>
    .main{
        background: url(../assets/bg.jpeg) repeat repeat;
+       display: grid;
+       grid-template-columns: 54% 20% 1fr;
    }
    h1{
         font-weight: 700;
@@ -81,12 +83,9 @@ export default {
    }
    .images{
         display: flex;
+        grid-column-start: 2;
         flex-direction: column;
         list-style: none;
-        position: absolute;
-        top: 200px;
-        left: 50vw;
-        width: 20%;
         z-index: 12;
    }
    .images img{
@@ -103,15 +102,16 @@ export default {
    }
 
    .backCover{
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        background-color: lightskyblue;
-        position: relative;
-        top: calc(14px + (1050 - 14) * ((100vw - 300px) / (1600 - 300)));
-        z-index: 10;
-        -webkit-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
-        -moz-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
-        box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: lightskyblue;
+    z-index: 10;
+    margin: 0 6% 0 6%;
+    -webkit-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+    -moz-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+    box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
    }
 
    .backCover-child{
