@@ -1,6 +1,7 @@
 <template>
   <div id="container">
     <Header></Header>
+    <Player></Player>
     <RecordOne></RecordOne>
 
   </div>
@@ -9,12 +10,14 @@
 <script>
 import Header from './components/Header.vue'
 import RecordOne from './components/RecordOne.vue'
+import Player from './components/Player.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    RecordOne
+    RecordOne,
+    Player
   }
 }
 </script>
