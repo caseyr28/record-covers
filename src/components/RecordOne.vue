@@ -29,6 +29,7 @@
             </li>   
         </ul>
         <div class="backCover">
+            <div class="back-content">
             <h6 class="backCover-child">Following are the liner notes from the original album package</h6>
             <p class="backCover-child has-dropcap" >He may not be a household name, but die-hard blues fans know Little Milton as a superb all-around electric bluesman -- a soulful singer, an evocative guitarist, an accomplished songwriter, and a skillful bandleader. He's often compared to the legendary B.B. King -- as well as Bobby "Blue" Bland -- for the way his signature style combines soul, blues, and R&B, a mixture that helped make him one of the biggest-selling bluesmen of the '60s (even if he's not as well-remembered as King). As time progressed, his music grew more and more orchestrated, with strings and horns galore. He maintained a steadily active recording career all the way from his 1953 debut on Sam Phillips' legendary Sun label, with his stunning longevity including notable stints at Chess (where he found his greatest commercial success), Stax, and Malaco.
 James Milton Campbell was born September 7, 1934, in the small Delta town of Inverness, MS, and grew up in Greenville. (He would later legally drop the "James" after learning of a half-brother with the same name.) His father Big Milton, a farmer, was a local blues musician, and Milton also grew up listening to the Grand Ole Opry radio program. At age 12, he began playing the guitar and saved up money from odd jobs to buy his own instrument from a mail-order catalog. By 15, he was performing for pay in local clubs and bars, influenced chiefly by T-Bone Walker but also by proto-rock & roll jump blues shouters. He made a substantial impression on other area musicians, even getting a chance to back Sonny Boy Williamson II, and caught the attention of R&B great Ike Turner, who was doubling as a talent scout for Sam Phillips at Sun. Turner introduced the still-teenaged Little Milton to Phillips, who signed him to a contract in 1953. With Turner's band backing him, Milton's Sun sides tried a little bit of everything -- he hadn't developed a signature style as of yet, but he did have a boundless youthful energy that made these early recordings some of his most exciting and rewarding. Unfortunately, none of them were hits, and Milton's association with Sun was over by the end of 1954. He set about forming his own band, which waxed one single for the small Meteor label in 1957, before picking up and moving to St. Louis in 1958.</p>
@@ -54,6 +55,7 @@ James Milton Campbell was born September 7, 1934, in the small Delta town of Inv
                         </tr>
                     </tbody>
                 </table>
+            </div>    
         </div>
     </div>
 </template>
@@ -118,20 +120,26 @@ export default {
    }
 
    .backCover{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    background-color: #D5FBF6;
-    z-index: 10;
-    margin: 0 6% 6% 6%;
-    -webkit-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
-    -moz-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
-    box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        background-color: #D5FBF6;
+        z-index: 10;
+        width: 90vw;
+        margin: 0 6% 6% 6%;
+        -webkit-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+        -moz-box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+        box-shadow: 0px -4px 38px -8px rgba(14,84,72,0.6);
+   }
+   .back-content{
+       column-width: 400px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 3em;
    }
 
    .backCover-child{
-       padding: 3em;
+       padding: 2%;
        /* grid-column-start: 2;
        color: azure;
        font-weight: 700;
@@ -152,7 +160,6 @@ export default {
        font-weight: 700;
        font-size: 7em;
        line-height: 94px;
-       padding: 1em;
    }
    .backCover h6{
        text-transform: uppercase;
